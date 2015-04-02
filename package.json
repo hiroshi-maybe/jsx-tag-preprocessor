@@ -22,5 +22,14 @@
   "devDependencies": {
     "mocha": "^2.2.1"
   },
-  "homepage": "https://github.com/k-ori/jsx-tag-preprocessor"
+  "homepage": "https://github.com/k-ori/jsx-tag-preprocessor",
+  "bugs": {
+    "url": "https://github.com/k-ori/jsx-tag-preprocessor/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }
