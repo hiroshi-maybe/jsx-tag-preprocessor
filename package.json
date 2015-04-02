@@ -16,8 +16,7 @@
   "author": "Hiroshi Kori <hiroshi.maybe@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jstransform": "^9.1.0",
-    "react": "^0.13.0"
+    "jstransform": "^9.1.0"
   },
   "devDependencies": {
     "mocha": "^2.2.1"
