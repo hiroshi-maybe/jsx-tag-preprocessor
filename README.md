@@ -4,7 +4,7 @@ A simple JSX tag preprocessor
 
 ## Examples
 
-```
+```javascript
 var JsxPreprocessor = require('jsx-tag-preprocessor');
 
 var src = 'React.render(<div><h1>Hello, world!</h1><pre key1="value1" key2="value2" /></div>,document.getElementById("example"));';
