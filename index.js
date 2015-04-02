@@ -3,13 +3,29 @@
 var transform = require('jstransform').transform,
 	reactTagVisitor = require('./lib/tagVisitor');
 
-var out = transform([reactTagVisitor('pre', function(attrs) { console.log('wow', attrs); return 'new conent!!'; })],
-	'React.render(<div><h1>Hello, world!</h1><pre type="content" key="info.billing-address" /></div>,document.getElementById("example"));');
-console.log('@@ OUT @@', out);
+/**
+ * JSX process to handle specified JSX tag name
+ * @param inputString {string} JSX source
+ * @param tagHandler(s) {object} or {Array}
+ * 		{
+	 * 			"tagName": "pre",
+	 * 			"onTag": function(attrs) {
+	 *				return attrs.key;
+	 *			}
+	 * 		}
+ * @returns outputString {string}
+ */
+function process(inputString, tagHandler) {
+	var tagHandlers = Array.isArray(tagHandler) ? tagHandler : [tagHandler],
+		visitors = tagHandlers.map(function(handler) {
+			return reactTagVisitor(handler.tagName, handler.onTag);
+		});
 
-/*
-module.exports = {
-	parse: function (inputString, callback) {
+	return transform(visitors, inputString).code;
+}
 
-	}
-};*/
+var JsxPreprocessor = {
+	process: process
+};
+
+module.exports = JsxPreprocessor;
