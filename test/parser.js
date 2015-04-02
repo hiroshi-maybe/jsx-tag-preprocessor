@@ -4,7 +4,7 @@
 var assert = require('assert'),
 	JsxPreprocessor = require('..');
 
-describe('parse', function () {
+describe('process', function () {
 
 	it('should replace `pre` tag by handler', function () {
 		var handler = {
