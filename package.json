@@ -1,0 +1,7 @@
+{
+  "name": "find-react-tag",
+  "dependencies": {
+    "jstransform": "^9.1.0",
+    "react": "^0.13.0"
+  }
+}
