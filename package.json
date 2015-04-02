@@ -1,10 +1,26 @@
 {
-  "name": "find-react-tag",
+  "name": "jsx-tag-preprocessor",
+  "version": "0.0.1",
+  "description": "A preprocessor by finding React JSX tags (<TagName [attributes]/>)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/k-ori/jsx-tag-preprocessor.git"
+  },
+  "keywords": [
+    "jsx",
+    "react",
+    "preprocessor",
+    "templating"
+  ],
+  "author": "Hiroshi Kori <hiroshi.maybe@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "jstransform": "^9.1.0",
     "react": "^0.13.0"
   },
   "devDependencies": {
     "mocha": "^2.2.1"
-  }
+  },
+  "homepage": "https://github.com/k-ori/jsx-tag-preprocessor"
 }
