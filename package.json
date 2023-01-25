@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/k-ori/jsx-tag-preprocessor.git"
+    "url": "git://github.com/hiroshi-maybe/jsx-tag-preprocessor.git"
   },
   "keywords": [
     "jsx",
@@ -21,9 +21,9 @@
   "devDependencies": {
     "mocha": "^2.2.1"
   },
-  "homepage": "https://github.com/k-ori/jsx-tag-preprocessor",
+  "homepage": "https://github.com/hiroshi-maybe/jsx-tag-preprocessor",
   "bugs": {
-    "url": "https://github.com/k-ori/jsx-tag-preprocessor/issues"
+    "url": "https://github.com/hiroshi-maybe/jsx-tag-preprocessor/issues"
   },
   "directories": {
     "test": "test"
